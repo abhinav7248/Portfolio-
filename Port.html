@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: blueviolet;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: rgb(65, 55, 114);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            color: rgb(204, 80, 80);
+        }
+
+        hr {
+            border: 0;
+            background: rebeccapurple;
+            height: 1px;
+            margin: 60px 84px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 30px 0;
+        }
+
+        .leftSection .purple {
+            color: rgb(204, 80, 80);
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            color: white;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .box {
+            background: white;
+            width: 80vw;
+            margin: 56px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .vertical {
+            width: calc(33.33% - 20px);
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .image-top {
+            width: 34px;
+            position: relative;
+            top: -38px;
+            left: -15px;
+        }
+
+        .vertical-title {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: rgb(79, 64, 79);
+        }
+
+        .vertical-desc {
+            margin-top: 10px;
+            color: rgb(173, 245, 12);
+            font-size: 12px;
+        }
+
+        .footer {
+            background-color: rgb(65, 55, 114);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .firstSection {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .firstSection div {
+                width: 100%;
+            }
+
+            .rightSection img {
+                width: 60%;
+                margin-top: 20px;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+            .vertical {
+                width: 100%;
+                margin: 0 0 20px;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .footer {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .leftSection {
+                font-size: 1rem;
+            }
+
+            .rightSection img {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Abhinav's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Abhinav</span>
+                <div>And I am a Passionate</div>
+                <div>Web Developer</div>
+            </div>
+            <div class="rightSection">
+                <img src="PngItem_1127587.png" alt="Abhinav's Photo">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What have I done so far</span>
+            <h1>Past Experiences</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html-5.png" alt="HTML Developer">
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="vertical-desc">
+                        (Hey, I am a Web Developer and I have been learning development since 2021. That is when my college started and I am good at it)
+                    </div>
+                </div>
+                <!-- Add more vertical sections as needed -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        &copy; 2023 Abhinav's Portfolio | Designed by Abhinav
+    </footer>
+</body>
+</html>
